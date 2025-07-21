@@ -32,7 +32,6 @@ services:
       # Kafka UI가 외부 접근용 listener(EXTERNAL)로 연결
       - KAFKA_CLUSTERS_0_NAME=Local-Kafka
       - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:9092
-      - KAFKA_CLUSTERS_0_ZOOKEEPER=      # KRaft 모드에서는 필요 없음
     networks:
       - kafka-net
     depends_on:
